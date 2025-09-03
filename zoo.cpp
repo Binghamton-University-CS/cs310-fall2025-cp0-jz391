@@ -1,6 +1,9 @@
 #include <iostream>
 #include <stdlib.h>
+
 #include "Animal.h"
+#include "AnimalsInZoo.h"
+
 
 using namespace std;
 
@@ -17,6 +20,9 @@ int main() {
    Animal* animal3 = new Animal("egg", 1287);
    animal3->display();
 
+   AnimalsInZoo aZoo(*animal3);
+   aZoo.display();
+   
    delete animal3;
    delete animal1;
 }
