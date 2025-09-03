@@ -7,7 +7,11 @@ Animal::Animal(std::string s, unsigned int y) {
 	year_discovered = y;
 
 }
-
+Animal::Animal() 
+{
+	species = "";
+	year_discovered = 0;
+}
 void Animal::display() {
 	std::cout << species << " [" << year_discovered << "]" << std::endl;
 }
